@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--width of webpage is same as the device, initial-scale is 1.0 so no zoom, natural sizing maintained -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet"><!--font imported-->
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>devChallenges.io | Minimal Blog Card</title>
+
+    <style>
+      * {
+        margin: 0;  /*always set it to default*/
+        padding: 0; /*always set it to default*/
+        box-sizing: border-box; 
+        font-family: "Sora", sans-serif;
+      }
+
+      body {
+        height: 100vh;/* stretch it to whole viewport*/
+        background-color: #FFFFFF;/*always move bg color to body instead of * cos * means all elements will hve same bg color */
+        
+        
+      }
+      main{
+        height:100vh;/* stretch it to whole viewport*/
+        display: grid;  
+        place-items: center; /* it will horizontally align the element */
+      }
+
+      
+
+      .card{
+        max-width:365px;
+        background-color:#FAFAF9;
+        border-radius: 15px;
+        box-shadow: 10px 10px 50px #E5EAF0;
+        overflow:hidden;
+        transition: 0.3s; 
+      }
+
+      .card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      img{
+        
+        height:50%;
+        border-radius: 15px;
+        margin:15px 15px 0px 15px;
+
+      }
+      .container{
+        color:#20293A;
+        margin:10px 20px;
+      }
+
+      .tag{
+        background-color: #F2EAFD;
+        color:#7C19EE;
+        font-size:0.625rem;
+        border-radius: 15px;
+        padding: 5px 10px;
+        display: inline-block; /* now margin-bottom works */
+        margin-bottom: 10px;/* This should work… but it won’t unless the tag is a block-level element — and by default, a <span> is inline, meaning it ignores vertical margin.*/
+      }
+
+      h3{
+      font-size: 1.125rem;
+      margin-top:5px;
+      margin-bottom:15px;
+      }
+      
+      p{
+        font-size:0.875rem;
+        color:#394150;
+        margin-bottom: 15px;
+        line-height:1.6;
+      }
+
+      .hr-content{
+        background-color:#E5EAF0;
+        width:100%;
+        height:1px;
+        border: none;
+      }
+      
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+    <div class="card">
+      <img src="C:\Users\lenovo\Downloads\Minimal-blog-card-starter-master\Minimal-blog-card-starter-master\resources\Cactus.jpg" alt="cactus">
+      <div class="container">
+        <span class="tag"><strong> Design </strong></span>
+        <h3>Embracing Minimalism</h3>
+        <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
+      </div>
+      <hr class="hr-content"/>
+      <p style="color:#20293A; font-size:0.75rem; margin:15px 20px;">Annie Spratt</p>
+      
+      </div>
+      </main>
+    <div class="author-info">
+      Coded by <a href="#">Ayneewon</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+    
+  </body>
+</html>
